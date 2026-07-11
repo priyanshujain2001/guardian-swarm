@@ -23,8 +23,9 @@
   "scripts": {
     "dev": "node -e \"require('http').createServer((req, res) => res.end('Guardian Swarm initialized. Open the repository docs to begin.')).listen(3000)\"",
     "build": "echo 'No build required for a skills repository.'",
+    "preflight": "node scripts/generate-context.js",
     "start": "node -e \"require('http').createServer((req, res) => res.end('Guardian Swarm initialized. Open the repository docs to begin.')).listen(3000)\"",
     "lint": "echo 'No linting required.'",
-    "test": "node --test tests/*.test.js && node scripts/validate-repo.js"
+    "test": "npm run preflight && node --test tests/*.test.js && node scripts/validate-repo.js"
   }
 }

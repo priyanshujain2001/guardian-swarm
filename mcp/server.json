@@ -1,0 +1,17 @@
+{
+  "name": "guardian-swarm-mcp",
+  "version": "1.1.0",
+  "description": "MCP-compatible metadata for Guardian Swarm review workflows",
+  "transport": "stdio",
+  "capabilities": [
+    "commands",
+    "instructions",
+    "audit-workflow",
+    "security-review",
+    "architecture-review"
+  ],
+  "entrypoints": {
+    "commands": ".claude/commands",
+    "instructions": "AGENTS.md"
+  }
+}

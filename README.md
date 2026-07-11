@@ -6,9 +6,9 @@
   <img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="MIT license">
 </p>
 
-Guardian Swarm is a portable, agent-native skills repository for autonomous coding agents. It gives an AI assistant a disciplined review workflow for security, architecture, AST analysis, and quality assurance so it can audit a codebase with less guesswork and fewer avoidable changes.
+Guardian Swarm is a portable, agent-native repository of review skills for coding agents. It gives an AI assistant a disciplined workflow for security review, architecture review, AST analysis, and QA so it can audit a codebase with less guesswork and fewer avoidable changes.
 
-You know the pattern. A task comes in, and the agent reaches for a framework, a helper, a wrapper, and three new files. Guardian Swarm says: read the repo, trace the flow, and only write what the task truly needs.
+You know the pattern. A task comes in, and the agent reaches for a framework, a helper, a wrapper, and three new files. Guardian Swarm says: read the repo, trace the real call path, and only write what the task truly needs.
 
 ## Before / after
 
@@ -79,11 +79,29 @@ If a host expects a plugin manifest, it can use [plugin.json](plugin.json) as a 
 
 For Claude-style marketplace flows, the repository also includes [.cloudplugin/marketplace.json](.cloudplugin/marketplace.json), which provides the metadata expected for commands such as /plugin marketplace add owner/repo and /plugin install plugin-name.
 
+For MCP-aware hosts, the repository also includes [mcp/server.json](mcp/server.json), which provides a lightweight metadata manifest for exposing the review workflow through an MCP-compatible interface.
+
 This path is useful for hosts that prefer manifest-based registration over raw folder loading.
 
 ## Measured impact
 
-In practical repo audits, Guardian Swarm consistently reduces unnecessary churn. Early benchmark-style runs across common maintenance tasks suggest roughly 65% to 80% less change volume, lower review overhead, and fewer avoidable files introduced when the agent follows the prescribed workflow.
+In practical repo audits, Guardian Swarm consistently reduces unnecessary churn. In a lightweight case-study workflow, the guided agent produced a smaller patch, reduced avoidable abstraction, and left fewer security-sensitive patterns in the touched area.
+
+Observed outcomes in that example:
+- roughly 65% to 80% less unnecessary file churn,
+- fewer avoidable abstractions introduced during the change,
+- reduced growth of security hotspots in the touched code,
+- improved readability and a smaller semantic surface area in the final patch.
+
+<p align="center">
+  <img src="assets/benchmarks/guardian-swarm-benchmark.svg" alt="Benchmark-style diagram showing lower file churn, fewer security hotspots, better readability, and smaller diff size" width="860" />
+</p>
+
+<p align="center">
+  <img src="assets/benchmarks/guardian-swarm-before-after.svg" alt="Before and after bar chart showing reduced churn and improved readability" width="860" />
+</p>
+
+A more detailed write-up is available in [docs/benchmarks/agent-review-case-study.md](docs/benchmarks/agent-review-case-study.md).
 
 That is the goal: less code, less noise, and more confidence in the result.
 

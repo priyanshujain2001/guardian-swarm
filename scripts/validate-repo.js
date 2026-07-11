@@ -7,6 +7,8 @@ function validateRepository(rootDir = process.cwd()) {
     'AGENTS.md',
     'package.json',
     'metadata.json',
+    'plugin.json',
+    'mcp/server.json',
     'commands/guardian-audit.md',
     'commands/guardian-secure.md',
     'commands/guardian-clean.md',
@@ -20,7 +22,11 @@ function validateRepository(rootDir = process.cwd()) {
     '.qoder/rules/guardian-swarm.md',
     '.opencode.json',
     '.clinerules',
-    'docs/agent-portability.md'
+    'docs/agent-portability.md',
+    'docs/generated/repo-map.json',
+    'docs/generated/dependency-graph.json',
+    'docs/generated/architecture.md',
+    'docs/generated/callgraph.json'
   ];
 
   const missing = requiredFiles.filter((relativePath) => !fs.existsSync(path.join(rootDir, relativePath)));

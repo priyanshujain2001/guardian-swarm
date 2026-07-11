@@ -16,6 +16,8 @@ If your host prefers a plugin-like install, use [plugin.json](plugin.json) as a 
 
 For Claude marketplace-style usage, also ensure [.cloudplugin/marketplace.json](.cloudplugin/marketplace.json) is present in the public repository root so the host can discover the plugin metadata.
 
+For MCP-aware hosts, use [mcp/server.json](mcp/server.json) as the lightweight MCP manifest entry point.
+
 ## 2. Trigger the swarm
 Use the commands in [commands/](commands/):
 - /guardian-audit: full multi-agent review.

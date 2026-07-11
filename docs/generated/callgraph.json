@@ -1,0 +1,34 @@
+{
+  "nodes": [
+    {
+      "id": "AGENTS.md",
+      "type": "instructions"
+    },
+    {
+      "id": "commands/guardian-audit.md",
+      "type": "command"
+    },
+    {
+      "id": "skills/guardian-security/SKILL.md",
+      "type": "skill"
+    },
+    {
+      "id": "subagents/01_security_agent.md",
+      "type": "subagent"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AGENTS.md",
+      "to": "commands/guardian-audit.md"
+    },
+    {
+      "from": "commands/guardian-audit.md",
+      "to": "skills/guardian-security/SKILL.md"
+    },
+    {
+      "from": "skills/guardian-security/SKILL.md",
+      "to": "subagents/01_security_agent.md"
+    }
+  ]
+}

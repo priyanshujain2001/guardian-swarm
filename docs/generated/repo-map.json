@@ -1,0 +1,114 @@
+{
+  "repo": "ponytail-junior",
+  "generatedAt": "2026-07-11T07:26:42.224Z",
+  "topLevelEntries": [
+    {
+      "name": ".claude",
+      "type": "directory"
+    },
+    {
+      "name": ".cloudplugin",
+      "type": "directory"
+    },
+    {
+      "name": ".guardian",
+      "type": "directory"
+    },
+    {
+      "name": "AGENTS.md",
+      "type": "file"
+    },
+    {
+      "name": "CHANGELOG.md",
+      "type": "file"
+    },
+    {
+      "name": "CLAUDE.md",
+      "type": "file"
+    },
+    {
+      "name": "CONTRIBUTING.md",
+      "type": "file"
+    },
+    {
+      "name": "LICENSE",
+      "type": "file"
+    },
+    {
+      "name": "QUICKSTART.md",
+      "type": "file"
+    },
+    {
+      "name": "README.md",
+      "type": "file"
+    },
+    {
+      "name": "ROADMAP.md",
+      "type": "file"
+    },
+    {
+      "name": "assets",
+      "type": "directory"
+    },
+    {
+      "name": "commands",
+      "type": "directory"
+    },
+    {
+      "name": "docs",
+      "type": "directory"
+    },
+    {
+      "name": "mcp",
+      "type": "directory"
+    },
+    {
+      "name": "metadata.json",
+      "type": "file"
+    },
+    {
+      "name": "package.json",
+      "type": "file"
+    },
+    {
+      "name": "plugin.json",
+      "type": "file"
+    },
+    {
+      "name": "scripts",
+      "type": "directory"
+    },
+    {
+      "name": "shared",
+      "type": "directory"
+    },
+    {
+      "name": "skills",
+      "type": "directory"
+    },
+    {
+      "name": "subagents",
+      "type": "directory"
+    },
+    {
+      "name": "templates",
+      "type": "directory"
+    },
+    {
+      "name": "tests",
+      "type": "directory"
+    },
+    {
+      "name": "workflows",
+      "type": "directory"
+    }
+  ],
+  "keyFolders": [
+    "commands",
+    "skills",
+    "subagents",
+    "workflows",
+    "tests",
+    "docs"
+  ]
+}
