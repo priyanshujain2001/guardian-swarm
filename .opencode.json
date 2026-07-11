@@ -1,0 +1,10 @@
+{
+  "instructions": [
+    "AGENTS.md",
+    "commands/guardian-audit.md",
+    "commands/guardian-secure.md",
+    "commands/guardian-clean.md",
+    "commands/guardian-deep-scan.md"
+  ],
+  "plugins": []
+}

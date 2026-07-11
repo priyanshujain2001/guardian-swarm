@@ -1,0 +1,6 @@
+{
+  "name": "Guardian Swarm",
+  "description": "A portable multi-agent skills repository for software engineering audits, security reviews, and design validation.",
+  "requestFramePermissions": [],
+  "tags": ["agents", "skills", "security", "architecture", "qa"]
+}

@@ -1,0 +1,10 @@
+---
+description: Guardian Swarm multi-agent audit workflow for Cursor and similar hosts
+applyTo: "**/*"
+---
+
+# Guardian Swarm
+
+Read [AGENTS.md](../../AGENTS.md) before making changes.
+Use the relevant slash command in [commands/](../../commands/) for the requested task.
+Maintain GUARDIAN_STATE.md during long tasks and base findings on repository evidence.

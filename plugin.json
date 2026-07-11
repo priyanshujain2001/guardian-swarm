@@ -1,0 +1,22 @@
+{
+  "name": "guardian-swarm",
+  "version": "1.1.0",
+  "description": "Plugin-style entry point for Guardian Swarm agent instructions and commands",
+  "type": "agent-skill-package",
+  "commands": [
+    "guardian-audit",
+    "guardian-secure",
+    "guardian-clean",
+    "guardian-deep-scan"
+  ],
+  "instructions": [
+    "AGENTS.md",
+    "commands/guardian-audit.md",
+    "commands/guardian-secure.md",
+    "commands/guardian-clean.md",
+    "commands/guardian-deep-scan.md"
+  ],
+  "entrypoints": {
+    "default": "README.md"
+  }
+}

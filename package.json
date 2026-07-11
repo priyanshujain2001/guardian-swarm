@@ -1,0 +1,30 @@
+{
+  "name": "@guardian-swarm/guardian-swarm",
+  "version": "1.1.0",
+  "description": "Portable multi-agent software engineering skills repository for autonomous coding agents",
+  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "agentic",
+    "skills",
+    "copilot",
+    "cursor",
+    "claude",
+    "codex",
+    "security",
+    "architecture",
+    "qa"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-org/guardian-swarm.git"
+  },
+  "homepage": "https://github.com/your-org/guardian-swarm",
+  "scripts": {
+    "dev": "node -e \"require('http').createServer((req, res) => res.end('Guardian Swarm initialized. Open the repository docs to begin.')).listen(3000)\"",
+    "build": "echo 'No build required for a skills repository.'",
+    "start": "node -e \"require('http').createServer((req, res) => res.end('Guardian Swarm initialized. Open the repository docs to begin.')).listen(3000)\"",
+    "lint": "echo 'No linting required.'",
+    "test": "node --test tests/*.test.js && node scripts/validate-repo.js"
+  }
+}
