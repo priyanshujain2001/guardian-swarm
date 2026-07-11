@@ -10,6 +10,10 @@ Guardian Swarm is a portable, agent-native repository of review skills for codin
 
 You know the pattern. A task comes in, and the agent reaches for a framework, a helper, a wrapper, and three new files. Guardian Swarm says: read the repo, trace the real call path, and only write what the task truly needs.
 
+## Connect
+
+- LinkedIn: [Priyanshu Jain](https://www.linkedin.com/in/priyanshu-jain-2536b6211/)
+
 ## Before / after
 
 You ask for a small refactor. The agent over-builds it with abstractions, extra scaffolding, and unnecessary dependencies.
