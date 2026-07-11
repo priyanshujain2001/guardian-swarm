@@ -36,7 +36,8 @@ function validateRepository(rootDir = process.cwd()) {
     'rules/enterprise/README.md',
     'memory/README.md',
     'agents/handoff-schema.json',
-    'scripts/classify-repo.js'
+    'scripts/classify-repo.js',
+    'scripts/activate-skills.js'
   ];
 
   const missing = requiredFiles.filter((relativePath) => !fs.existsSync(path.join(rootDir, relativePath)));

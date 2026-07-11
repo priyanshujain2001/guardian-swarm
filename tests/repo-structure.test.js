@@ -87,3 +87,12 @@ test('repository classification script returns structured recommendations', () =
   assert.ok(result.recommended_skills.includes('guardian-security'));
   assert.equal(typeof result.repository, 'string');
 });
+
+test('skill activation script maps classification to selected skills and standards', () => {
+  const { activateSkills } = require('../scripts/activate-skills');
+  const result = activateSkills(repoRoot);
+
+  assert.ok(Array.isArray(result.selectedSkills));
+  assert.ok(Array.isArray(result.selectedStandards));
+  assert.ok(result.selectedSkills.includes('guardian-security'));
+});
