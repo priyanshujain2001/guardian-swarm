@@ -77,6 +77,8 @@ If a host expects a plugin manifest, it can use [plugin.json](plugin.json) as a 
 3. Enable the commands from [commands/](commands/) and the instructions from [AGENTS.md](AGENTS.md).
 4. Start with /guardian-audit to activate the swarm workflow.
 
+For Claude-style marketplace flows, the repository also includes [.cloudplugin/marketplace.json](.cloudplugin/marketplace.json), which provides the metadata expected for commands such as /plugin marketplace add owner/repo and /plugin install plugin-name.
+
 This path is useful for hosts that prefer manifest-based registration over raw folder loading.
 
 ## Measured impact

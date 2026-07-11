@@ -14,6 +14,8 @@ If your host prefers a plugin-like install, use [plugin.json](plugin.json) as a 
 3. Allow the host to load [AGENTS.md](AGENTS.md) and the command files in [commands/](commands/).
 4. Start with /guardian-audit or /guardian-secure.
 
+For Claude marketplace-style usage, also ensure [.cloudplugin/marketplace.json](.cloudplugin/marketplace.json) is present in the public repository root so the host can discover the plugin metadata.
+
 ## 2. Trigger the swarm
 Use the commands in [commands/](commands/):
 - /guardian-audit: full multi-agent review.

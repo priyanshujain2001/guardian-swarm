@@ -1,0 +1,44 @@
+{
+  "name": "guardian-swarn",
+  "displayName": "Guardian Swarm",
+  "version": "1.1.0",
+  "description": "A portable multi-agent skills repository for security, architecture, AST analysis, and QA workflows in Claude Code and similar agent hosts.",
+  "repository": "https://github.com/priyanshujain2001/gaurdian-swarn",
+  "homepage": "https://github.com/priyanshujain2001/gaurdian-swarn",
+  "license": "MIT",
+  "author": {
+    "name": "Priyanshu Jain",
+    "url": "https://github.com/priyanshujain2001"
+  },
+  "keywords": [
+    "claude",
+    "plugin",
+    "agents",
+    "security",
+    "architecture",
+    "qa",
+    "skills"
+  ],
+  "commands": [
+    {
+      "name": "guardian-audit",
+      "description": "Run the full Guardian Swarm multi-agent audit workflow."
+    },
+    {
+      "name": "guardian-secure",
+      "description": "Run the targeted security and dependency review workflow."
+    },
+    {
+      "name": "guardian-clean",
+      "description": "Run the cleanup workflow for smells, dead code, and minor refactors."
+    },
+    {
+      "name": "guardian-deep-scan",
+      "description": "Run the deep AST and call-graph analysis workflow."
+    }
+  ],
+  "entrypoints": {
+    "instructions": "AGENTS.md",
+    "commandsDir": ".claude/commands"
+  }
+}
