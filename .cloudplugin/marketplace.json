@@ -3,8 +3,8 @@
   "displayName": "Guardian Swarm",
   "version": "1.1.0",
   "description": "A portable multi-agent skills repository for security, architecture, AST analysis, and QA workflows in Claude Code and similar agent hosts.",
-  "repository": "https://github.com/priyanshujain2001/gaurdian-swarn",
-  "homepage": "https://github.com/priyanshujain2001/gaurdian-swarn",
+  "repository": "https://github.com/priyanshujain2001/guardian-swarm",
+  "homepage": "https://github.com/priyanshujain2001/guardian-swarm",
   "license": "MIT",
   "author": {
     "name": "Priyanshu Jain",

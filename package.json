@@ -17,9 +17,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/priyanshujain2001/gaurdian-swarn.git"
+    "url": "git+https://github.com/priyanshujain2001/guardian-swarm.git"
   },
-  "homepage": "https://github.com/priyanshujain2001/gaurdian-swarn",
+  "homepage": "https://github.com/priyanshujain2001/guardian-swarm",
   "scripts": {
     "dev": "node -e \"require('http').createServer((req, res) => res.end('Guardian Swarm initialized. Open the repository docs to begin.')).listen(3000)\"",
     "build": "echo 'No build required for a skills repository.'",
