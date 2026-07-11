@@ -26,7 +26,17 @@ function validateRepository(rootDir = process.cwd()) {
     'docs/generated/repo-map.json',
     'docs/generated/dependency-graph.json',
     'docs/generated/architecture.md',
-    'docs/generated/callgraph.json'
+    'docs/generated/callgraph.json',
+    'registry/packages/bandit.yaml',
+    'registry/packages/ruff.yaml',
+    'registry/packages/radon.yaml',
+    'registry/packages/semgrep.yaml',
+    'standards/owasp/README.md',
+    'standards/pep8/README.md',
+    'rules/enterprise/README.md',
+    'memory/README.md',
+    'agents/handoff-schema.json',
+    'scripts/classify-repo.js'
   ];
 
   const missing = requiredFiles.filter((relativePath) => !fs.existsSync(path.join(rootDir, relativePath)));

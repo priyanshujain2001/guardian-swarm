@@ -1,0 +1,12 @@
+name: radon
+install:
+  - pip install radon
+command:
+  - radon cc .
+output_format: text
+limitations:
+  - Complexity metrics only
+  - Needs interpretation in context
+documentation: https://radon.readthedocs.io/
+alternatives:
+  - lizard

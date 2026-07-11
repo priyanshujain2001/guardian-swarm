@@ -49,3 +49,41 @@ test('root instructions and command docs stay wired together', () => {
   assert.match(auditCommand, /guardian-audit/);
   assert.match(secureCommand, /guardian-secure/);
 });
+
+test('skills expose machine-readable manifests and platform scaffolding exists', () => {
+  const skillsDir = path.join(repoRoot, 'skills');
+  const skillDirs = fs.readdirSync(skillsDir, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name);
+
+  skillDirs.forEach((skillName) => {
+    const manifestPath = path.join(skillsDir, skillName, 'skill.yaml');
+    assert.equal(fs.existsSync(manifestPath), true, `Missing ${skillName}/skill.yaml`);
+  });
+
+  const requiredPlatformFiles = [
+    'registry/packages/bandit.yaml',
+    'registry/packages/ruff.yaml',
+    'registry/packages/radon.yaml',
+    'registry/packages/semgrep.yaml',
+    'standards/owasp/README.md',
+    'standards/pep8/README.md',
+    'rules/enterprise/README.md',
+    'memory/README.md',
+    'agents/handoff-schema.json',
+    'scripts/classify-repo.js',
+  ];
+
+  requiredPlatformFiles.forEach((relativePath) => {
+    assert.equal(fs.existsSync(path.join(repoRoot, relativePath)), true, `Missing ${relativePath}`);
+  });
+});
+
+test('repository classification script returns structured recommendations', () => {
+  const { classifyRepository } = require('../scripts/classify-repo');
+  const result = classifyRepository(repoRoot);
+
+  assert.ok(Array.isArray(result.classifications));
+  assert.ok(result.recommended_skills.includes('guardian-security'));
+  assert.equal(typeof result.repository, 'string');
+});

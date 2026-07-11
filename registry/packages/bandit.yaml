@@ -1,0 +1,12 @@
+name: bandit
+install:
+  - pip install bandit
+command:
+  - bandit -r .
+output_format: sarif
+limitations:
+  - Best for Python static analysis
+  - Requires project context for meaningful triage
+documentation: https://bandit.readthedocs.io/
+alternatives:
+  - semgrep

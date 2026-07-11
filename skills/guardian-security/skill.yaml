@@ -1,0 +1,18 @@
+name: guardian-security
+version: 1.0
+summary: Security review and dependency risk assessment
+description: Complete security review workflow for repositories, including dependency and secret exposure analysis.
+requires:
+  - bandit
+  - semgrep
+  - ruff
+inputs:
+  - repository
+outputs:
+  - findings.json
+  - report.md
+estimated_runtime: medium
+priority: high
+supports:
+  - python
+  - javascript

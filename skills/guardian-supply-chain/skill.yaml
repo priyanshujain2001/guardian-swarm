@@ -1,0 +1,16 @@
+name: guardian-supply-chain
+version: 1.0
+summary: Supply-chain and dependency provenance review
+description: Reviews package provenance, dependency trust, and update posture for external components.
+requires:
+  - semgrep
+  - bandit
+inputs:
+  - repository
+outputs:
+  - supply-chain-report.md
+estimated_runtime: medium
+priority: high
+supports:
+  - python
+  - javascript

@@ -1,0 +1,15 @@
+name: guardian-api-design
+version: 1.0
+summary: API architecture and REST review
+description: Reviews route definitions, HTTP method usage, versioning, and API structure.
+requires:
+  - semgrep
+inputs:
+  - repository
+outputs:
+  - api-report.md
+estimated_runtime: medium
+priority: high
+supports:
+  - python
+  - javascript

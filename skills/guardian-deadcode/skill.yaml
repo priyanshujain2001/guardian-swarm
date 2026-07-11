@@ -1,0 +1,15 @@
+name: guardian-deadcode
+version: 1.0
+summary: Dead code and unreachable logic review
+description: Identifies unused code paths and stale structures that should be removed or reworked.
+requires:
+  - ruff
+inputs:
+  - repository
+outputs:
+  - deadcode-report.md
+estimated_runtime: medium
+priority: medium
+supports:
+  - python
+  - javascript

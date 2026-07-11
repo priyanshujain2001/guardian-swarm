@@ -1,0 +1,15 @@
+name: guardian-codesmell
+version: 1.0
+summary: Code smell review and cleanup guidance
+description: Flags maintainability issues such as duplication, over-complexity, and weak naming patterns.
+requires:
+  - ruff
+inputs:
+  - repository
+outputs:
+  - smell-report.md
+estimated_runtime: medium
+priority: medium
+supports:
+  - python
+  - javascript

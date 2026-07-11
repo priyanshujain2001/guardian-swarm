@@ -1,0 +1,12 @@
+name: ruff
+install:
+  - pip install ruff
+command:
+  - ruff check .
+output_format: text
+limitations:
+  - Focused on linting and style issues
+  - Not a replacement for full security review
+documentation: https://docs.astral.sh/ruff/
+alternatives:
+  - flake8

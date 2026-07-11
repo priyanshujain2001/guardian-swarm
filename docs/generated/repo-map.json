@@ -1,6 +1,6 @@
 {
   "repo": "ponytail-junior",
-  "generatedAt": "2026-07-11T07:33:41.891Z",
+  "generatedAt": "2026-07-11T07:50:02.472Z",
   "topLevelEntries": [
     {
       "name": ".claude",
@@ -43,8 +43,8 @@
       "type": "file"
     },
     {
-      "name": "ROADMAP.md",
-      "type": "file"
+      "name": "agents",
+      "type": "directory"
     },
     {
       "name": "assets",
@@ -63,6 +63,10 @@
       "type": "directory"
     },
     {
+      "name": "memory",
+      "type": "directory"
+    },
+    {
       "name": "metadata.json",
       "type": "file"
     },
@@ -75,6 +79,14 @@
       "type": "file"
     },
     {
+      "name": "registry",
+      "type": "directory"
+    },
+    {
+      "name": "rules",
+      "type": "directory"
+    },
+    {
       "name": "scripts",
       "type": "directory"
     },
@@ -84,6 +96,10 @@
     },
     {
       "name": "skills",
+      "type": "directory"
+    },
+    {
+      "name": "standards",
       "type": "directory"
     },
     {

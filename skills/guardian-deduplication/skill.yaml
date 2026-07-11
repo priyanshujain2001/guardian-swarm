@@ -1,0 +1,16 @@
+name: guardian-deduplication
+version: 1.0
+summary: Duplication and clone detection
+
+description: Reviews repeated logic, copy-paste patterns, and structural duplication opportunities.
+requires:
+  - semgrep
+inputs:
+  - repository
+outputs:
+  - duplication-report.md
+estimated_runtime: medium
+priority: medium
+supports:
+  - python
+  - javascript

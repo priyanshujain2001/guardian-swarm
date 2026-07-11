@@ -1,0 +1,12 @@
+name: semgrep
+install:
+  - pip install semgrep
+command:
+  - semgrep --config auto .
+output_format: json
+limitations:
+  - Rule quality depends on configured policies
+  - May produce higher false positives in broad scans
+documentation: https://semgrep.dev/
+alternatives:
+  - bandit
